@@ -1,0 +1,36 @@
+# ---------- Secrets (never commit) ----------
+.env
+.env.local
+.env.*.local
+api/.env
+web/.env*
+!.env.example
+!api/.env.example
+
+# ---------- Python ----------
+api/__pycache__/
+*.py[cod]
+api/venv/
+.venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---------- Node / Next.js ----------
+node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+web/*.tsbuildinfo
+npm-debug.log*
+
+# ---------- Nested git repo (create-next-app creates one) ----------
+web/.git/
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

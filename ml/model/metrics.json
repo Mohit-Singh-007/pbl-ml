@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "model": "Logistic Regression",
+      "precision": 0.3066,
+      "recall": 0.9075,
+      "f1": 0.4583,
+      "roc_auc": 0.9736,
+      "confusion_matrix": [
+        [
+          8779,
+          821
+        ],
+        [
+          37,
+          363
+        ]
+      ]
+    },
+    {
+      "model": "Decision Tree",
+      "precision": 0.3175,
+      "recall": 0.885,
+      "f1": 0.4673,
+      "roc_auc": 0.9327,
+      "confusion_matrix": [
+        [
+          8839,
+          761
+        ],
+        [
+          46,
+          354
+        ]
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "precision": 0.8599,
+      "recall": 0.445,
+      "f1": 0.5865,
+      "roc_auc": 0.9858,
+      "confusion_matrix": [
+        [
+          9571,
+          29
+        ],
+        [
+          222,
+          178
+        ]
+      ]
+    }
+  ],
+  "threshold_metrics": [
+    {
+      "threshold": 0.3,
+      "precision": 0.656,
+      "recall": 0.715
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.8599,
+      "recall": 0.445
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.9762,
+      "recall": 0.205
+    }
+  ],
+  "feature_importance": {
+    "amount_ratio": 0.241,
+    "is_new_payee": 0.1351,
+    "device_changed": 0.1138,
+    "hour": 0.1122,
+    "txns_last_hour": 0.0888,
+    "amount": 0.0743,
+    "receiver_reports": 0.0741,
+    "account_age_days": 0.0509,
+    "location_changed": 0.0479,
+    "txn_type_COLLECT": 0.0427,
+    "txn_type_P2P": 0.0099,
+    "txn_type_P2M": 0.0094
+  }
+}
