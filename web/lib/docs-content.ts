@@ -1,5 +1,3 @@
-// All text for the Documentation page lives here. Edit the wording freely.
-
 export const TOC = [
   { id: "overview", label: "1. The problem" },
   { id: "architecture", label: "2. How the system fits together" },
@@ -11,9 +9,8 @@ export const TOC = [
   { id: "database", label: "8. The database" },
   { id: "frontend", label: "9. The web app" },
   { id: "limits", label: "10. Limits and future work" },
-  { id: "presentation", label: "11. Presentation plan and demo" },
-  { id: "qa", label: "12. Viva questions and answers" },
-  { id: "glossary", label: "13. Glossary" },
+  { id: "qa", label: "11. Viva questions and answers" },
+  { id: "glossary", label: "12. Glossary" },
 ];
 
 export const KEY_NUMBERS: { label: string; value: string }[] = [
