@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  ArrowLeft,
   BookOpen,
   BrainCircuit,
   LayoutDashboard,
@@ -13,11 +14,12 @@ import {
 import { cn } from "@/lib/utils";
 
 const NAV = [
-  { href: "/", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/check", label: "Check transaction", icon: ScanSearch },
   { href: "/transactions", label: "Transactions", icon: ListChecks },
   { href: "/insights", label: "Model insights", icon: BrainCircuit },
   { href: "/documentation", label: "Documentation", icon: BookOpen },
+  { href: "/", label: "Home", icon: ArrowLeft },
 ];
 
 export function AppSidebar() {
@@ -35,8 +37,7 @@ export function AppSidebar() {
       </div>
       <nav className="flex gap-1 overflow-x-auto px-2 pb-2 md:flex-col md:pb-0">
         {NAV.map(({ href, label, icon: Icon }) => {
-          const active =
-            href === "/" ? pathname === "/" : pathname.startsWith(href);
+          const active = href !== "/" && pathname.startsWith(href);
           return (
             <Link
               key={href}

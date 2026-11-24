@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { AppSidebar } from "@/components/main/app-sidebar";
+
 import { Toaster } from "@/components/ui/sonner";
+import { AppShell } from "@/components/main/app-shell";
 
 const fontSans = Outfit({
   subsets: ["latin"],
@@ -20,12 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontSans.variable} antialiased`}>
-        <div className="flex min-h-screen flex-col md:flex-row">
-          <AppSidebar />
-          <main className="flex-1 overflow-x-hidden p-4 md:p-8">
-            {children}
-          </main>
-        </div>
+        <AppShell>{children}</AppShell>
         <Toaster richColors position="top-right" />
       </body>
     </html>
