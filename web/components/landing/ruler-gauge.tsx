@@ -12,7 +12,7 @@ function verdictOf(p: number) {
       : { label: "Fraud", color: "var(--red)" };
 }
 
-/** A ruler from 0 to 100% with the three verdict zones. The marker slides between example scores. */
+
 export function RulerGauge() {
   const [i, setI] = useState(0);
 

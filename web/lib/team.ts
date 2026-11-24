@@ -10,40 +10,36 @@ export type Member = {
 
 export const PROJECT = {
   course: "MCA",
-  institute: "Your college / university name", // TODO: edit
+  institute: "GEHU, Bhimtal",
   year: "2026",
   repo: "https://github.com/Mohit-Singh-007/pbl-ml",
 };
 
 export const GUIDE: { name: string; designation: string } = {
-  name: "Guide name", // TODO: edit
-  designation: "Project guide, Department of Computer Applications", // TODO: edit
+  name: "Dr. Bhupesh Rawat",
+  designation: "Professor,School of Computer Applications",
 };
 
 export const TEAM: Member[] = [
   {
-    name: "Mohit Singh", // TODO: check spelling
-    role: "Team member", // TODO: e.g. "Model and data"
-    focus: "Describe what this person worked on.",
-    roll: "Roll no.",
+    name: "Mohit Singh",
+    role: "Team Leader",
+    roll: "2551515",
     github: "https://github.com/Mohit-Singh-007",
   },
   {
-    name: "Team member 2",
-    role: "Role",
-    focus: "Describe what this person worked on.",
-    roll: "Roll no.",
+    name: "Simran Dalakoti",
+    role: "Model Implementation | Testing",
+    roll: "2551529",
   },
   {
-    name: "Team member 3",
-    role: "Role",
-    focus: "Describe what this person worked on.",
-    roll: "Roll no.",
+    name: "Aditya Joshi",
+    role: "UI/UX",
+    roll: "2551501",
   },
   {
-    name: "Team member 4",
-    role: "Role",
-    focus: "Describe what this person worked on.",
-    roll: "Roll no.",
+    name: "Divya Belwal",
+    role: "Visualization",
+    roll: "2551507",
   },
 ];

@@ -1,5 +1,4 @@
--- UPI Fraud Detection - PostgreSQL schema
--- Run:  psql -U upi -d upi_fraud -f db/schema.sql
+
 
 CREATE TABLE IF NOT EXISTS transactions (
     id                SERIAL PRIMARY KEY,

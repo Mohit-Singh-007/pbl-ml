@@ -1,5 +1,3 @@
-/* Landing page: a ledger / reviewer's desk, styled with the app's own theme tokens. Everything is prefixed lp- so it never touches the app pages. */
-
 html:has(.lp-root) {
   scroll-behavior: smooth;
 }

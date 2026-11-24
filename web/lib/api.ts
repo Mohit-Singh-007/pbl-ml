@@ -47,7 +47,6 @@ export type ModelInfo = {
 
 type Result<T> = { data: T; error: null } | { data: null; error: string };
 
-/** Server-side GET that never throws, so a page can show a helpful message when the API is down. */
 export async function apiGet<T>(path: string): Promise<Result<T>> {
   try {
     const res = await fetch(`${API_URL}${path}`, { cache: "no-store" });

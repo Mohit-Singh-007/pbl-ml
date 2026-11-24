@@ -1,4 +1,3 @@
-/** Horizontal gauge: three zones (Safe / Suspicious / Fraud) with a marker at the model's probability. */
 export function RiskGauge({ probability }: { probability: number }) {
   const position = Math.min(Math.max(probability, 0), 1) * 100;
   return (
